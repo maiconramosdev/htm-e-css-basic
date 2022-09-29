@@ -1,0 +1,320 @@
+/*
+    No HTML= (id) / No CSS = (#)
+    No HTML = (class) / No CSS (=) .
+
+    (id) é único
+    (class) pode ser usado em vários conteúdos
+
+    Dê nomes a suas classes e ids de acordo com a função e não de acordo com a forma
+*/
+
+* {
+    /*Reset CSS*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Define que independente da adição de borda, padding e margin a box não altera seu tamanho real*/
+}
+
+body {
+    background-image: url(../assets/bg/bg-body.jpg);
+    /*Aplica um fundo em toda a página*/
+    background-repeat: repeat;
+    /*Repete o fundo por toda página*/
+    background-size: 400px;
+    /*Altera o tamanho do fundo*/
+
+    /*Outros atributos de background
+    
+    background-attachment: fixed; (Fundo não rola junto com a página)
+    background-attachment: scroll; (Fundo rola junto com a página)
+    background-attachment: local; (Fundo rola junto com o elemento)
+
+    */
+    margin-left: 4%;
+    margin-top: 4%;
+}
+
+#title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 4%;
+    letter-spacing: -2px;
+    display: block;
+    line-height: 1.2;
+}
+
+.subtitles {
+    border: 3.6px solid #476ECC;
+    border-radius: 6px;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 1.4em;
+    color: #476ECC;
+    padding: 10px;
+    margin-bottom: 4%;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /*Padrão para todos os títulos*/
+    font-family: monospace;
+    font-weight: 600;
+    margin-bottom: 4%;
+}
+
+p {
+    font-family: monospace;
+    line-height: 2;
+    margin-bottom: 2%;
+}
+
+#paragraph {
+    font-family: monospace;
+    background-color: #e9e9f3;
+    padding: 30px;
+    width: 600px;
+    line-height: 20px;
+    border-radius: 6px;
+    color: black;
+    font-weight: 300;
+    margin-bottom: 4%;
+}
+
+.format {
+    font-family: monospace;
+    line-height: 1.6;
+    margin-bottom: 4%;
+}
+
+#lists {
+    background-color: #e9e9f3;
+    padding: 30px;
+    font-family: monospace;
+    font-size: 1em;
+    display: inline-block;
+    margin-bottom: 4%;
+    border-radius: 6px;
+}
+
+.title-list {
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 4%;
+}
+
+ul {
+    /*list-style-type: square; Utilizar estilos, quadrados, círculos e circulo vazio como marcador*/
+    list-style-image: url("../assets/svg/check-solid.svg");
+    list-style-position: inside;
+    margin-bottom: 4%;
+    padding: 30px;
+    background-color: white;
+    width: 200px;
+    border-radius: 6px;
+}
+
+ol {
+    list-style-type: lower-alpha;
+    /*Utilizar letras minúsculas como marcador*/
+    list-style-position: inside;
+    margin-bottom: 4%;
+    padding: 30px;
+    background-color: white;
+    width: 200px;
+    border-radius: 5px;
+}
+
+li {
+    background-color: #fedc5a;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#table {
+    background-color: #ffffff;
+    font-family: monospace;
+    font-size: 1rem;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+th {
+    font-family: monospace;
+    font-size: 1rem;
+    text-align: left;
+    padding: 10px;
+}
+
+td {
+    font-family: monospace;
+    font-size: 0.8rem;
+    text-align: left;
+    padding: 10px;
+}
+
+.force-block {
+    display: block;
+}
+
+.link-pg-02 {
+    text-decoration: none;
+    /*Remove o sublinhado do link*/
+    padding: 20px 50px 20px 50px;
+    background-color: #476ECC;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: monospace;
+    font-weight: 700;
+    /*Espessura da fonte*/
+    cursor: pointer;
+    /*Alterar o estilo do cursor*/
+    border-radius: 6px;
+    /*Cantos arredondados*/
+    display: inline-block;
+    margin-bottom: 2%;
+    transition: .5s;
+}
+
+.link-pg-02:hover {
+    /*Ação quando passar o mouse sobre o botão*/
+    text-decoration: none;
+    padding: 20px 50px 20px 50px;
+    background-color: #476fccac;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: monospace;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 2%;
+    transition: .5s;
+}
+
+.link-externo {
+    text-decoration: none;
+    /*Remove o sublinhado do link*/
+    padding: 20px 50px 20px 50px;
+    background-color: #E8A5C0;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: monospace;
+    font-weight: 700;
+    /*Espessura da fonte*/
+    cursor: pointer;
+    /*Alterar o estilo do cursor*/
+    border-radius: 6px;
+    /*Cantos arredondados*/
+    display: inline-block;
+    margin-bottom: 2%;
+    transition: .5s;
+    margin-bottom: 4%;
+}
+
+.link-externo:hover {
+    /*Ação quando passar o mouse sobre o botão*/
+    text-decoration: none;
+    padding: 20px 50px 20px 50px;
+    background-color: #e8a5c0ad;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: monospace;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 6px;
+    display: inline-block;
+    transition: .5s;
+}
+
+.sorvetes {
+    margin-bottom: 4%;
+}
+
+/*MARGIN E PADDING*/
+
+#container {
+    background-color: #c9ada7;
+    color: white;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 6%;
+    padding: 40px;
+    /*Margem para colocar espaçamento fora do container*/
+    /*Padding para colocar espaçamento dentro do container*/
+}
+
+/*BORDA*/
+
+.borda {
+    border-width: 5px;
+    border-style: solid;
+    border-color: #fedc5a;
+    border-radius: 20px;
+    margin-bottom: 4%;
+    padding: 50px;
+    font-size: 1.2em;
+    display: inline-block;
+}
+
+/*BOX MODEL*/
+
+.box-model {
+    background-color: #e9e9f3;
+    width: 400px;
+    margin-bottom: 6%;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#title-box-model {
+    border: 2px solid #000;
+    border-radius: 60px;
+    font-family: monospace;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 6%;
+    display: inline-block;
+    padding: 0px 40px 0px 40px;
+}
+
+#text-box-model {
+    text-align: center;
+    color: #000;
+    font-size: 1em;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/*Outras transformações para texto:
+
+        text-decoration: none; (Remove qualquer formatação padrão do texto)
+        text-transform: uppercase; (Todo texto em maiúsculo)
+        text-transform: lowercase; (Todo texto em minúsculo)
+        text-transform: capitalize; (O Começo da cada palavra em maiúsculo)
+        text-ident: 22px; (Cria um recuo para o texto)
+        text-decoration: underline; (Texto sublinhado)
+        text-decoration: overline; (Texto com linha na parte superior)
+        text-decoration: line-through; (Texto riscado)
+        letter-spacing: 1px; (Espaçamento entre as letras)
+        line-height: 1px; (Espaçamento entre as linhas)
+        font-size: 1em; (Definir tamanho da fonte
+        word-spacing: 2px; Espaçamento entre as palavras
+    */
+
+/*Cores podem ser aplicadas utilizando os seguintes atributos:
+
+    hexadecimal - #7e33c4
+    rgb - 126, 51, 196
+    rgba - 126, 51, 196, 0.6 - (O (a) é referente a transparência sua variação é de 0 a 1)
+*/

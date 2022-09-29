@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--Documento HTML5-->
+<html lang="pt-BR">
+<!--Linguagem do documento-->
+
+<head>
+    <!--Tag que contém: Título do documento, estilos, scripts, meta dados e etc-->
+
+    <meta charset="UTF-8">
+    <!--Tag para representar caracteres especiais-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Documento com compatibilidade a versões anteriores do IE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Torna o documento responsivo, adaptável a qualquer tela-->
+    <title>Olá Mundo!</title>
+    <!--Título da página, que pode ser encontrado na aba do navegador-->
+    <link rel="stylesheet" href="style.css">
+    <!--Link para carregar o CSS-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;600;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+    </style>
+    <!--Aplicar fontes direto do Google Fonts-->
+
+</head>
+
+<body>
+    <!--Corpo da página, aqui fica todo o conteúdo do documento-->
+
+    <div id="title">
+        Conceitos básicos <br> sobre html & css
+    </div>
+
+    <!--TÍTULOS-->
+
+    <div class="subtitles">Títulos por níveis</div>
+    <div>
+        <h1>Título nível 1</h1>
+        <h2>Título nível 2</h2>
+        <h3>Título nível 3</h3>
+        <h4>Título nível 4</h4>
+        <h5>Título nível 5</h5>
+        <h6>Título nível 6</h6>
+    </div>
+
+    <!--PARÁGRAFOS-->
+
+    <div class="subtitles">Parágrafos & formatações</div>
+
+    <div id="paragraph">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.<br> It has survived not only five centuries, but also the
+            leap into
+            electronic typesetting, remaining essentially unchanged.</p>
+        <!--Tag para escrever um parágrafo-->
+        <!--A tag (br) é utilizada para quebrar o conteúdo em linhas, quanto mais br's houverem mais quebras haverão-->
+    </div>
+
+    <!--FORMATAÇÕES-->
+
+    <div class="format">
+        <p>Essa tag deixa o <strong>texto</strong> em negrito</p>
+        <p>Essa tag deixa o <em>texto</em> em itálico</p>
+        <p>Essa tag deixa o <mark>texto</mark> marcado</p>
+        <p>Essa tag deixa o <small>texto</small> pequeno</p>
+        <p>Essa tag deixa o <del>texto</del> riscado</p>
+        <p>Essa tag deixa o <ins>texto</ins> sublinhado</p>
+        <p>Essa tag deixa o <sub>texto</sub> subscrito</p>
+        <p>Essa tag deixa o <sup>texto</sup> supscrito</p>
+    </div>
+
+    <!--LISTA DESORDENADA-->
+
+    <div class="subtitles">Listas desordenadas, ordenadas e tabelas</div>
+
+    <div class="force-block">
+        <div id="lists">
+            <!--Tag usada para definir uma divisão ou seção do documento-->
+            <div class="title-list">Lista desordenada</div>
+            <ul>
+                <li>Arroz</li>
+                <li>Feijão</li>
+                <li>Refrigerante</li>
+            </ul>
+
+            <!--LISTA ORDENADA-->
+
+            <div class="title-list">Lista ordenada</div>
+            <ol>
+                <li>Marcela</li>
+                <li>João</li>
+                <li>Marcos</li>
+            </ol>
+
+            <!--TABELAS-->
+
+            <div class="title-list">Tabela</div>
+            <table id="table">
+                <tr>
+                    <th>Nome</th>
+                    <!--(th) Table head, títulos da tabela-->
+                    <th>Telefone</th>
+                    <th>E-mail</th>
+                </tr>
+
+                <tr>
+                    <td>Maicon Ramos</td>
+                    <!--(td) Table date, dados da tabela -->
+                    <td>(73) 99943-4436</td>
+                    <td>maiconrammos@gmail.com</td>
+                </tr>
+
+                <tr>
+                    <td>Alana Ramos</td>
+                    <td>(73) 99199-1060</td>
+                    <td>alanarammos@gmail.com</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!--LINKS-->
+
+    <div class="force-block">
+        <div class="subtitles">Links</div>
+        <p>Link para uma página no mesmo site:</p>
+        <a class="link-pg-02" href="pg-02.html">PÁGINA 2</a>
+        <!--Este link carrega a segunda página que está salva na mesma pasta do documento principal-->
+
+        <p>Link para uma página externa:</p>
+        <a class="link-externo" href="https://www.instagram.com/maiconrammos/" target="_blank">LINK EXTERNO</a>
+        <!--Este link carrega uma página externa da web-->
+    </div>
+
+    <!--IMAGENS-->
+
+    <div class="subtitles">Imagens</div>
+    <div>
+        <!--Primeira alternativa-->
+        <p>Imagem usando link da web:</p>
+        <img class="sorvetes" src="https://cdn-icons-png.flaticon.com/256/6639/6639755.png" width="120"
+            alt="sorvete-1"><br>
+        <!--Tag para utilizar uma imagem da web-->
+
+        <!--Segunda alternativa-->
+        <p>Imagem que está salva no computador:</p>
+        <img class="sorvetes" src="assets/img/sorvete-2.png" width="120" alt="sorvete-2"><br>
+        <!--Tag para utilizar uma imagem está salva no seu computador-->
+
+        <!--Imagem em forma de link-->
+        <p>Imagem clicável com um link:</p>
+        </p>
+        <a href="https://www.flaticon.com/br/stickers-gratis/sorvete">
+            <img class="sorvetes" src="assets/img/sorvete-3.png" width="120" alt="sorvete-3"><br>
+        </a>
+    </div>
+
+    <!--UNIDADES DE MEDIDAS (ABSOLUTAS)-->
+
+    <div id="px"></div>
+    <!--Pixel-->
+    <div id="in"></div>
+    <!--Inch/Polegada-->
+    <div id="cm"></div>
+    <!--Centímetro-->
+    <div id="mm"></div>
+    <!--Milímetro-->
+    <div id="pt"></div>
+    <!--ponto-->
+    <div id="pc"></div>
+    <!--Picas-->
+
+    <!--UNIDADES DE MEDIDAS (RELATIVAS)-->
+
+    <div id="%"></div>
+    <!--Percentages-->
+    <div id="em/rem"></div>
+    <!--Font-size-->
+    <div id="ex/ch"></div>
+    <!--Character-sizes-->
+    <div id="vw/vh"></div>
+    <!--Viewport Dimensions-->
+    <div id="vmax"></div>
+    <!--Viewport Max-->
+    <div id="vmin"></div>
+    <!--Viewport Min-->
+
+    <!--
+            (px) e (em) São as unidades de medida mais recomendadas pela W3C
+            Por padrão as fontes do navegador vem com 16px
+            16px geralmente é = 1em
+            (em) É relativo ao tamanho padrão de (16px), logo: 1em = 16px / 2em = 32px / 3em = 48px... 
+        -->
+
+    <!--BORDA-->
+    <div class="subtitles">Borda</div>
+    <div class="force-block">
+        <div class="borda">
+            <h3>Lorem Ipsum</h3>
+        </div>
+    </div>
+
+    <!--BOX MODEL-->
+
+    <div class="subtitles">Box model</div>
+    <div class="boxmodel">
+        <h1 id="title-boxmodel">Título</h1>
+        <p id="text-boxmodel">
+            Mussum Ipsum, cacilds vidis litro abertis. Quem manda na minha terra sou euzis! Praesent vel viverra
+            nisi.
+            Mauris aliquet nunc non turpis scelerisque, eget. Copo furadis é disculpa de bebadis, arcu quam euismod
+            magna. Delegadis gente finis, bibendum egestas augue arcu ut est.
+        </p>
+    </div>
+
+    <br><br><br>
+
+</body>
+
+</html>
